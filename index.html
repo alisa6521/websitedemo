@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Microsoft Power Automate 簡介</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <div class="slides-container">
+        <!-- Title Slide -->
+        <section class="slide" id="slide1">
+            <div class="slide-content flex flex-col items-center justify-center text-center">
+                <img src="images/power-automate-logo.svg" alt="Microsoft Power Automate Logo" class="w-32 h-32 mb-6">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Microsoft Power Automate</h1>
+                <p class="text-xl md:text-2xl text-gray-600 max-w-2xl">簡化工作流程，自動化重複性任務</p>
+                <div class="mt-12 flex space-x-2">
+                    <button class="btn-primary" onclick="startPresentation()">開始簡報</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Introduction Slide -->
+        <section class="slide hidden" id="slide2">
+            <div class="slide-content">
+                <h2 class="slide-title">什麼是 Power Automate？</h2>
+                <div class="flex flex-col md:flex-row gap-6 mt-8">
+                    <div class="flex-1">
+                        <img src="images/power-automate-banner.svg" alt="Power Automate Banner" class="w-full rounded-lg shadow-sm">
+                    </div>
+                    <div class="flex-1 flex flex-col justify-center">
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="text-blue-600 w-6 h-6 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>Microsoft Power Platform 的一部分，提供工作流程自動化服務</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="text-blue-600 w-6 h-6 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>在喜愛的應用程式和服務之間創建自動化工作流程</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="text-blue-600 w-6 h-6 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>不需要編程知識，使用低程式碼/無程式碼方法實現自動化</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check-circle" class="text-blue-600 w-6 h-6 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>提高生產力，節省時間，減少人為錯誤</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features Slide -->
+        <section class="slide hidden" id="slide3">
+            <div class="slide-content">
+                <h2 class="slide-title">Power Automate 關鍵功能</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <img src="images/cloud-flow-icon.svg" alt="Cloud Flow Icon" class="feature-icon">
+                        </div>
+                        <h3 class="feature-title">雲端流程 (Cloud Flows)</h3>
+                        <p class="feature-description">根據觸發條件自動執行任務，包括自動流程、即時流程和排程流程</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <img src="images/desktop-flow-icon.svg" alt="Desktop Flow Icon" class="feature-icon">
+                        </div>
+                        <h3 class="feature-title">桌面流程 (Desktop Flows)</h3>
+                        <p class="feature-description">使用 RPA（機器人流程自動化）自動執行桌面應用程式和網頁上的工作</p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="icon-container">
+                            <img src="images/business-flow-icon.svg" alt="Business Process Flow Icon" class="feature-icon">
+                        </div>
+                        <h3 class="feature-title">業務流程 (Business Process Flows)</h3>
+                        <p class="feature-description">引導使用者完成組織定義的業務流程，確保一致性和效率</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AI Capabilities Slide -->
+        <section class="slide hidden" id="slide4">
+            <div class="slide-content">
+                <h2 class="slide-title">AI 驅動功能</h2>
+                <div class="flex flex-col md:flex-row gap-8 mt-8">
+                    <div class="flex-1 flex flex-col justify-center">
+                        <div class="ai-feature-item">
+                            <h3 class="text-xl font-semibold mb-2 flex items-center">
+                                <i data-lucide="brain-circuit" class="text-purple-600 w-5 h-5 mr-2"></i>
+                                AI 撰寫
+                            </h3>
+                            <p>使用 Copilot 透過自然語言更快地建立、編輯和擴展流程自動化</p>
+                        </div>
+                        
+                        <div class="ai-feature-item">
+                            <h3 class="text-xl font-semibold mb-2 flex items-center">
+                                <i data-lucide="lightbulb" class="text-purple-600 w-5 h-5 mr-2"></i>
+                                AI 見解
+                            </h3>
+                            <p>透過 AI 推薦更快地發現優化和自動化機會</p>
+                        </div>
+                        
+                        <div class="ai-feature-item">
+                            <h3 class="text-xl font-semibold mb-2 flex items-center">
+                                <i data-lucide="file-code" class="text-purple-600 w-5 h-5 mr-2"></i>
+                                AI 處理
+                            </h3>
+                            <p>應用內建 AI 模型，智能自動化文檔等重複性工作</p>
+                        </div>
+                        
+                        <div class="ai-feature-item">
+                            <h3 class="text-xl font-semibold mb-2 flex items-center">
+                                <i data-lucide="sparkles" class="text-purple-600 w-5 h-5 mr-2"></i>
+                                AI 生成
+                            </h3>
+                            <p>利用內建 GPT 支援，負責任地將原始數據轉換為引人入勝的內容</p>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <div class="ai-console">
+                            <div class="ai-console-header">
+                                <div class="ai-console-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="ai-console-title">AI Copilot</div>
+                            </div>
+                            <div class="ai-console-body">
+                                <div class="ai-prompt">當收到新郵件且主旨包含「緊急」時發送短信通知</div>
+                                <div class="ai-typing">
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                                <div class="ai-response">
+                                    <img src="images/ai-copilot-icon.svg" alt="AI Copilot" class="w-5 h-5 mr-2">
+                                    <span id="ai-response-text">正在為您創建流程...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Connectors Slide -->
+        <section class="slide hidden" id="slide5">
+            <div class="slide-content">
+                <h2 class="slide-title">豐富的連接器生態系統</h2>
+                <p class="text-center mb-8">Power Automate 提供 1,000+ 種預構建連接器，連接各種應用和服務</p>
+                
+                <div class="connectors-grid">
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="Microsoft 365" class="w-10 h-10">
+                        <span>Microsoft 365</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="SharePoint" class="w-10 h-10">
+                        <span>SharePoint</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="Teams" class="w-10 h-10">
+                        <span>Teams</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="Dynamics 365" class="w-10 h-10">
+                        <span>Dynamics 365</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="OneDrive" class="w-10 h-10">
+                        <span>OneDrive</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="Excel" class="w-10 h-10">
+                        <span>Excel</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="SQL Server" class="w-10 h-10">
+                        <span>SQL Server</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="Azure" class="w-10 h-10">
+                        <span>Azure</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="GitHub" class="w-10 h-10">
+                        <span>GitHub</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="Salesforce" class="w-10 h-10">
+                        <span>Salesforce</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="SAP" class="w-10 h-10">
+                        <span>SAP</span>
+                    </div>
+                    <div class="connector-item">
+                        <img src="images/connection-icon.svg" alt="更多..." class="w-10 h-10">
+                        <span>更多...</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Use Cases Slide -->
+        <section class="slide hidden" id="slide6">
+            <div class="slide-content">
+                <h2 class="slide-title">常見應用場景</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i data-lucide="users" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="use-case-title">人力資源自動化</h3>
+                        <ul class="use-case-list">
+                            <li>自動化入職與離職流程</li>
+                            <li>休假申請自動審批</li>
+                            <li>自動發送員工滿意度調查</li>
+                            <li>自動提醒績效考核時間</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i data-lucide="bar-chart" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="use-case-title">銷售與行銷自動化</h3>
+                        <ul class="use-case-list">
+                            <li>自動跟進潛在客戶</li>
+                            <li>自動生成銷售報告</li>
+                            <li>社交媒體監控與回應</li>
+                            <li>客戶資料自動更新</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i data-lucide="clipboard-check" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="use-case-title">生產與運營自動化</h3>
+                        <ul class="use-case-list">
+                            <li>庫存監控與自動補貨</li>
+                            <li>生產線異常自動警報</li>
+                            <li>工單和維修請求自動分配</li>
+                            <li>品質控制報告自動生成</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="use-case-card">
+                        <div class="use-case-icon">
+                            <i data-lucide="file-text" class="w-6 h-6 text-blue-600"></i>
+                        </div>
+                        <h3 class="use-case-title">財務與會計自動化</h3>
+                        <ul class="use-case-list">
+                            <li>自動化發票處理</li>
+                            <li>費用報銷自動審批</li>
+                            <li>定期財務報表自動生成</li>
+                            <li>應收賬款提醒</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Getting Started Slide -->
+        <section class="slide hidden" id="slide7">
+            <div class="slide-content">
+                <h2 class="slide-title">操作簡介</h2>
+                <div class="flex flex-col md:flex-row gap-8 mt-8">
+                    <div class="flex-1">
+                        <div class="steps-container">
+                            <div class="step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h3 class="step-title">登入 Power Automate</h3>
+                                    <p class="step-description">使用 Microsoft 帳號登入 <a href="https://flow.microsoft.com" target="_blank" class="text-blue-600 hover:underline">flow.microsoft.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" data-step="2">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h3 class="step-title">選擇流程類型</h3>
+                                    <p class="step-description">根據需求選擇自動流程、即時流程、排程流程或桌面流程</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" data-step="3">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h3 class="step-title">配置觸發條件</h3>
+                                    <p class="step-description">設定何時觸發流程（例如：收到郵件、檔案更新等）</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" data-step="4">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h3 class="step-title">添加操作</h3>
+                                    <p class="step-description">從連接器中選擇並配置要執行的操作</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" data-step="5">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h3 class="step-title">保存並測試</h3>
+                                    <p class="step-description">儲存流程並進行測試，確保正常運作</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="demo-container">
+                            <div class="demo-header">
+                                <div class="demo-dots">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <div class="demo-title">Power Automate 演示</div>
+                            </div>
+                            <div class="demo-body">
+                                <div id="demo-content" class="demo-step-1">
+                                    <div class="demo-step demo-step-1">
+                                        <img src="https://learn.microsoft.com/en-us/power-automate/media/getting-started/home-full-numbers.png" alt="Power Automate 登入頁面" class="w-full">
+                                    </div>
+                                    <div class="demo-step demo-step-2">
+                                        <img src="https://learn.microsoft.com/en-us/power-automate/media/getting-started/flowmenutypes.png" alt="選擇流程類型" class="w-full">
+                                    </div>
+                                    <div class="demo-step demo-step-3">
+                                        <img src="https://learn.microsoft.com/en-us/power-automate/desktop-flows/media/ui-elements/ui-elements-tab.png" alt="配置觸發條件" class="w-full">
+                                    </div>
+                                    <div class="demo-step demo-step-4">
+                                        <img src="https://www.tatvasoft.com/blog/wp-content/uploads/2019/08/safely-consume-an-azure-function-through-power-automate.jpg" alt="添加操作" class="w-full">
+                                    </div>
+                                    <div class="demo-step demo-step-5">
+                                        <img src="https://www.brightwork.com/wp-content/uploads/Save-time-with-Power-Automate.png" alt="保存並測試" class="w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Slide -->
+        <section class="slide hidden" id="slide8">
+            <div class="slide-content">
+                <h2 class="slide-title">總結</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+                    <div class="summary-card">
+                        <h3 class="text-xl font-semibold mb-4">Power Automate 優勢</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="text-green-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>低程式碼/無程式碼平台，降低技術門檻</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="text-green-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>豐富的連接器生態系統，支持各種應用集成</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="text-green-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>AI 驅動功能提升自動化效率</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="text-green-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>與 Microsoft 生態系統緊密整合</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="check" class="text-green-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>桌面和雲端流程結合，實現全面自動化</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="summary-card">
+                        <h3 class="text-xl font-semibold mb-4">適用對象</h3>
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <i data-lucide="user" class="text-blue-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>業務使用者：無需編程知識也能自動化日常任務</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="briefcase" class="text-blue-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>部門管理者：提高團隊效率，減少人工錯誤</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="code" class="text-blue-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>IT 專業人員：快速開發和部署自動化解決方案</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-lucide="building" class="text-blue-600 w-5 h-5 mt-0.5 mr-2 flex-shrink-0"></i>
+                                <span>企業決策者：實現數字化轉型，提高生產力</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <p class="text-lg">開始使用 Power Automate，簡化工作流程，提升效率！</p>
+                    <a href="https://flow.microsoft.com" target="_blank" class="btn-primary mt-4 inline-block">訪問 Power Automate</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Controls -->
+        <div class="navigation-controls hidden" id="navControls">
+            <button id="prevBtn" class="nav-btn" onclick="prevSlide()">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            </button>
+            <div id="slideCounter" class="slide-counter">1 / 8</div>
+            <button id="nextBtn" class="nav-btn" onclick="nextSlide()">
+                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Built with <a href="https://flowith.net" target="_blank" rel="noopener noreferrer">Flowith Oracle</a>.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+        
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false })
+    </script>
+</body>
+</html>
