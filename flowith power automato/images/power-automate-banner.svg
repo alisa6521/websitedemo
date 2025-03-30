@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <defs>
+    <linearGradient id="a" x1="400" x2="400" y1="0" y2="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f9f9f9"/>
+      <stop offset="1" stop-color="#eaeaea"/>
+    </linearGradient>
+    <linearGradient id="b" x1="300" x2="300" y1="100" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0078d4"/>
+      <stop offset="1" stop-color="#005a9e"/>
+    </linearGradient>
+    <linearGradient id="c" x1="480" x2="480" y1="100" y2="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#50e6ff"/>
+      <stop offset="1" stop-color="#28c7fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="400" fill="url(#a)" rx="8"/>
+  <path fill="url(#b)" d="M240 100h120c5.5 0 10 4.5 10 10v180c0 5.5-4.5 10-10 10H240c-5.5 0-10-4.5-10-10V110c0-5.5 4.5-10 10-10Z"/>
+  <path fill="url(#c)" d="M440 150h80c5.5 0 10 4.5 10 10v80c0 5.5-4.5 10-10 10h-80c-5.5 0-10-4.5-10-10v-80c0-5.5 4.5-10 10-10Z"/>
+  <path fill="#fff" d="M180 150h80c5.5 0 10 4.5 10 10v80c0 5.5-4.5 10-10 10h-80c-5.5 0-10-4.5-10-10v-80c0-5.5 4.5-10 10-10Z"/>
+  <path fill="none" stroke="#999" stroke-dasharray="4 4" stroke-width="2" d="M370 200H430M230 150v-20h260v20M230 250v20h260v-20"/>
+  <path fill="#0078d4" d="m517 196.5-8 4 8 4v-8ZM175 196.5l8 4-8 4v-8Z"/>
+  <circle cx="400" cy="130" r="6" fill="#0078d4"/>
+  <circle cx="400" cy="270" r="6" fill="#0078d4"/>
+</svg>
